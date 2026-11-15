@@ -10,7 +10,9 @@ sudo pacman -S --needed --noconfirm \
     base-devel git curl \
     vlc obsidian \
     texlive-meta \
-    uv zoxide
+    uv zoxide ripgrep zsh neovim tailscale
+
+sudo systemctl enable --now tailscaled
 
 # --- fzf (git install, as in the original script) ---
 if [ ! -d "$HOME/.fzf" ]; then
@@ -18,4 +20,4 @@ if [ ! -d "$HOME/.fzf" ]; then
 fi
 "$HOME/.fzf/install"
 
-echo "Done. Restart your shell (and log out/in for Flatpak apps to show up in menus)."
+echo "Done. Restart your shell."
