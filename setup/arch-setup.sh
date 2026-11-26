@@ -13,10 +13,10 @@ sudo pacman -S --needed --noconfirm \
     texlive-meta \
     uv zoxide ripgrep tree bat yay \
     zsh neovim tailscale yay ttf-jetbrains-mono \
-    intellij-idea-community-edition \
+    intellij-idea-community-edition discord \
     cups 
 
-yay -S visual-studio-code-bin
+yay -S visual-studio-code-bin localsend
 
 sudo systemctl enable --now cups # Used to be able to print things - more work is required later:
 # you need to add the printer manually
